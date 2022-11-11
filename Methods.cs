@@ -70,7 +70,7 @@ namespace ConsoleApp1
             Console.Write("Введите конец отрезка: ");
             var b = double.Parse(Console.ReadLine());
             Console.Write("Введите точность вычислений: ");
-            var eps = double.Parse(Console.ReadLine(), CultureInfo.CreateSpecificCulture("en-US"));
+            var eps = double.Parse(Console.ReadLine().Replace('.', ','));
             
             Console.Write("Укажите код метода и нажмите ВВОД:\n1 - Деление пополам\n2 - Метод Ньютона\n");
             double DoOperation(int op)
